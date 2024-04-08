@@ -1,0 +1,24 @@
+<div class="container">
+    <h1>Cart</h1>
+    <hr>
+    <div *ngIf="cartBooks.length === 0">
+      <p>Your cart is empty</p>
+    </div>
+    <div class="row">
+      <div class="col-md-4" *ngFor="let item of cartBooks">
+        <div class="card">
+          <img [src]="item.retrievedImage" class="card-img-top" alt="{{ item.name }}" height="200">
+          <div class="card-body">
+            <h5 class="card-title">{{ item.name }}</h5>
+            <p class="card-text">Price: ${{ item.price }}</p>
+            <button class="btn btn-danger" (click)="removeFromCart(item)">Remove</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="margin-bottom: 20px;">
+      <button class="btn btn-success" (click)="buyBooks()">Buy Books</button>
+  </div>
+    <button class="btn btn-primary" (click)="goBack()">Back to Shop</button>
+  </div>
+  

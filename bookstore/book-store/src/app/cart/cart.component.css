@@ -1,0 +1,24 @@
+.card {
+    margin-bottom: 20px;
+    width: 250px; /* Adjust the width as needed */
+  }
+  
+  .card-img-top {
+    object-fit: cover;
+    height: 150px; 
+  }
+  
+  .card-title {
+    font-size: 1.1rem; 
+  }
+  
+  .card-text {
+    margin-bottom: 5px;
+  }
+  
+  .btn-danger {
+    margin-top: 5px;
+  }
+  .btn-primary {
+    margin-bottom: 10px; /* Add margin at the bottom */
+}
